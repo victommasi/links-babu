@@ -141,6 +141,26 @@ main li img {
 	height: auto;
 }
 
+.modal .modal-title {
+	display: block;
+	font-weight: bold;
+}
+
+.modal .modal-subtitle {
+	display: block;
+}
+.modal .header-title > .address{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #007bff;
+}
+
+.modal .header-title > .address > svg {
+	margin-right: 10px;
+	color: #007bff;
+}
+
 /***************** FOOTER  **********************/
 
 footer {
