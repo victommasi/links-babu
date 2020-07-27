@@ -1,92 +1,240 @@
 <html>
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148249166-1"></script> -->
 		<script>
-			// window.dataLayer = window.dataLayer || [];
-			// function gtag(){dataLayer.push(arguments);}
-			// gtag('js', new Date());
-			// gtag('config', 'UA-148249166-1');
 		</script>
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Nutricionista Jéssica Vilela - Fortaleza CE">
-		<!-- <meta name="google-site-verification" content="amBGfJMHU2f2l822EmgG7-zWNSX0b1tuCY2h48V5PiY" /> -->
-		<!-- <meta name="keywords" content="browniechic, brownie, chic, fortaleza, doces, doceria, browneria, sorvete"> -->
+		<meta name="description" content="Crossfit Babu - Fortaleza CE">
+		<meta name="keywords" content="crossfit, cross, training, fortaleza, health, fitness">
 		<meta name="author" content="Victor Tommasi">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-		<title> Jéssica Vilela </title>
+		<title> CF Babu </title>
 		<link rel="icon" href="images/logo.jpg">
 	</head>
 
 	<body>
 		<header>
 			<div>
-				<img src="images/logo2.jpeg" alt="Logo" title="Imagem logo"/>
+				<img src="images/logo.jpg" alt="Logo" title="Imagem logo"/>
 			</div>
 		</header>
 
 		<main>
+			<h5> Escolha a unidade</h5>
+
 			<div class="grid-container">
 				<ul>
 					<li>
 						<div>
-							<a href="https://api.whatsapp.com/send?phone=5585996195940">
-								<img src="images/whatsapp.png" alt="Whatsapp" title="Imagem Whatsapp"/>
+							<a href="" data-toggle="modal" data-target="#modalSD">
+								<span> SD </span>
 							</a>
 						</div>
-						<p> Agende sua consulta </p>
+						<p> Santos Dumont </p>
 					</li>
 					<li>
 						<div>
-							<a id="ebook-download" href="" data-toggle="modal" data-target="#modalEbook">
-								<img src="images/ebook-2.png" alt="Ebook" title="Imagem Ebook"/>
+							<a href="" data-toggle="modal" data-target="#modalAD">
+								<span> AD </span>
 							</a>
 						</div>
-						<p> E-book de lanches e sobremesas </p>
+						<p> Aldeota </p>
 					</li>
 					<li>
 						<div>
-							<a href="https://t.me/moov_trainingcf">
-								<img src="images/moov.png" alt="Ebook" title="Imagem Ebook"/>
+							<a href="" data-toggle="modal" data-target="#modalBZ">
+								<span> BZ </span>
 							</a>
 						</div>
-						<p> Nosso programa de treinos </p>
+						<p> Bezerra de Menezes </p>
+					</li>
+					<li>
+						<div>
+							<a href="" data-toggle="modal" data-target="#modalMap">
+								<img src="images/map.png" alt="Ebook" title="Imagem Ebook"/>
+							</a>
+						</div>
+						<p> Localização </p>
 					</li>
 				</ul>
 			</div>
 		</main>
 
-		<!-- Modal -->
-		<div class="modal fade" id="modalEbook" tabindex="-1" role="dialog" aria-labelledby="modalEbookLabel" aria-hidden="true">
+		<!-- Modal MAP -->
+		<div class="modal fade" id="modalMap" tabindex="-1" role="dialog" aria-labelledby="modalMapLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
+
 					<div class="modal-header">
-						<h6 class="modal-title" id="modalEbookLabel"> Preencha os campos</h6>
+						<h5 class="modal-title" id="modalMapLabel"> Fortaleza - CE</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
+
 					<div class="modal-body">
-						<form id="lead-form">
-							<div class="form-group">
-								<input type="text" class="form-control" id="input-name" placeholder="Seu nome">
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" id="input-email" placeholder="Seu e-mail">
-								<span id="alert-validation" class="input-error"> Digite um e-mail válido</span>
-							</div>
-							<button id="submit-form" type="button" class="btn btn-primary">Download</button>
-						</form>
+						<img class="city-map" src="images/city.png"/>
 					</div>
+
 					<div class="modal-footer">
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal AD -->
+		<div class="modal fade" id="modalAD" tabindex="-1" role="dialog" aria-labelledby="modalADLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalADLabel"> Babu Aldeota</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<div class="list-group" id="accordionAD">
+							<a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#collapseOneAD" aria-expanded="true" aria-controls="collapseOne">
+								<span> <i class="icon fa fa-clock" aria-hidden="true"></i> </span>
+								Horários
+							</a>
+							<div id="collapseOneAD" class="collapse" aria-labelledby="headingOne" data-parent="#accordionAD">
+								<div class="card-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+
+							<a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#collapseTwoAD" aria-expanded="true" aria-controls="collapseOne">
+								<span> <i class="icon fas fa-dollar-sign" aria-hidden="true"></i> </span>
+								Planos
+							</a>
+							<div id="collapseTwoAD" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionAD">
+								<div class="card-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+
+
+							<a href="https://api.whatsapp.com/send?phone=5585999397940&text=Oi,%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="list-group-item list-group-item-action">
+								<span style="margin-right: -5px;"> <i class="icon icon-secondary fab fa-whatsapp" aria-hidden="true"></i> </span>
+								 Agende uma aula
+							</a>
+
+							<a href="https://api.whatsapp.com/send?phone=5585999397940&text=Oi,%20poderia%20me%20dar%20algumas%20informa%C3%A7%C3%B5es?" class="list-group-item list-group-item-action">
+								<span> <i class="icon icon-primary fas fa-info" aria-hidden="true"></i> </span>
+								Informações
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-</div>
+		</div>
+
+		<!-- Modal SD -->
+		<div class="modal fade" id="modalSD" tabindex="-1" role="dialog" aria-labelledby="modalSDLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalSDLabel"> Babu Santos Dumont</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<div class="list-group" id="accordionSD">
+							<a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#collapseOneSD" aria-expanded="true" aria-controls="collapseOne">
+								<span> <i class="icon fa fa-clock" aria-hidden="true"></i> </span>
+								Horários
+							</a>
+							<div id="collapseOneSD" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSD">
+								<div class="card-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+
+							<a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#collapseTwoSD" aria-expanded="true" aria-controls="collapseTwo">
+								<span> <i class="icon fas fa-dollar-sign" aria-hidden="true"></i> </span>
+								Planos
+							</a>
+							<div id="collapseTwoSD" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSD">
+								<div class="card-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+
+							<a href="#" class="list-group-item list-group-item-action">
+								<span style="margin-right: -5px;"> <i class="icon icon-secondary fab fa-whatsapp" aria-hidden="true"></i> </span>
+								Agende uma aula
+							</a>
+							<a hr
+							ef="#" class="list-group-item list-group-item-action">
+								<span> <i class="icon icon-primary fas fa-info" aria-hidden="true"></i> </span>
+								Informações
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal BZ -->
+		<div class="modal fade" id="modalBZ" tabindex="-1" role="dialog" aria-labelledby="modalBZLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalBZLabel"> Babu Bezerra de Menezes </h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<div class="list-group" id="accordionBZ">
+							<a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#collapseOneBZ" aria-expanded="true" aria-controls="collapseOne">
+								<span> <i class="icon fa fa-clock" aria-hidden="true"></i> </span>
+								Horários
+							</a>
+							<div id="collapseOneBZ" class="collapse" aria-labelledby="headingOne" data-parent="#accordionBZ">
+								<div class="card-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+
+							<a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#collapseTwoBZ" aria-expanded="true" aria-controls="collapseOne">
+								<span> <i class="icon fas fa-dollar-sign" aria-hidden="true"></i> </span>
+								Planos
+							</a>
+							<div id="collapseTwoBZ" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionBZ">
+								<div class="card-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+
+							<a href="#" class="list-group-item list-group-item-action">
+								<span style="margin-right: -5px;"> <i class="icon icon-secondary fab fa-whatsapp" aria-hidden="true"></i> </span>
+								Agende uma aula
+							</a>
+
+							<a href="#" class="list-group-item list-group-item-action">
+								<span> <i class="icon icon-primary fas fa-info" aria-hidden="true"></i> </span>
+								Informações
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 
 		<!-- <footer>
 			<p> Desenvolvido por <a href="https://www.linkedin.com/in/victortommasi"> Victor Tommasi </a></p>

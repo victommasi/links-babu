@@ -5,7 +5,7 @@ body {
 	font-size: 14px;
 	background-position: 50% 50%;
 	background-repeat: repeat;
-  background: linear-gradient(-45deg, #e96759, #e96759);
+  background: linear-gradient(-45deg, #eee, #fff);
 }
 
 a {
@@ -29,7 +29,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 30px 0;
+	margin: 30px 0 10px;
 	padding: 15px
 }
 
@@ -50,6 +50,11 @@ header img {
 
 /***************** MAIN  **********************/
 
+main > h5 {
+	text-align: center;
+	color: #3d3d3d;
+}
+
 main > .grid-container {
 	margin: 20px;
 }
@@ -61,6 +66,7 @@ main ul {
 }
 
 main li > div {
+	display: flex;
 	justify-self: center;
 	align-self: center;
 	border-radius: 20px;
@@ -70,6 +76,16 @@ main li > div {
 	width: 110px;
 	height: 110px;
 	margin: 0 auto;
+}
+
+main li span {
+	font-size: 48px;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	color: #3d3d3d;
 }
 
 main li > p {
@@ -110,6 +126,20 @@ main li img {
 	font-weight: bold;
 }
 
+.modal .list-group-item {
+	margin: 5px 0;
+	border-radius: 8px;
+}
+
+.modal .list-group-item .icon{
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+.modal .city-map {
+	width: 100%;
+	height: auto;
+}
 
 /***************** FOOTER  **********************/
 
@@ -174,19 +204,6 @@ footer a {
 		visibility:visible;
 	}
 
-	.parallax { 
-		/* Set a specific height */
-		height: 400px; 
-	}
-
-	.parallax:before { 
-		/* Set a specific height */
-		height: 400px; 
-		position: fixed;
-	}
 	
-	.parallax > .parallax-text {
-		padding: 100px 50px;
-	}
 }
 
