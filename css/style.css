@@ -5,7 +5,7 @@ body {
 	font-size: 14px;
 	background-position: 50% 50%;
 	background-repeat: repeat;
-  background: linear-gradient(-45deg, #eee, #fff);
+  background: linear-gradient(-45deg, #fff, #fff);
 }
 
 a {
@@ -129,6 +129,9 @@ main li img {
 .modal .list-group-item {
 	margin: 5px 0;
 	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 .modal .list-group-item .icon{
@@ -149,11 +152,13 @@ main li img {
 .modal .modal-subtitle {
 	display: block;
 }
-.modal .header-title > .address{
+.modal .header-title > .address {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	color: #007bff;
+	font-size: 13px;
+	cursor: pointer;
 }
 
 .modal .header-title > .address > svg {
